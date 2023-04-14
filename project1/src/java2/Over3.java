@@ -2,8 +2,6 @@ package java2;
 
 import java.util.Arrays;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-
 public class Over3 {
 	/*
 	 메인 실행 class : over1 , Method : userlist(String)
