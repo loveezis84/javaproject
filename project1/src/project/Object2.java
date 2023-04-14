@@ -12,6 +12,7 @@ public class Object2 {
 		al.add(6000);
 		al.add("01023451235");
 		System.out.println(al);
+		dd
 
 	}
 
