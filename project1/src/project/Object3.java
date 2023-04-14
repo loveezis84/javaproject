@@ -28,15 +28,14 @@ class ob1{
 		 응용문제1
 		 해당 배열값 중 평균 총 포인트는 얼마인지 결과값을 출력하시오.
 		 예시)
-		 총 평균 포인트는 : 0 원 입니다. 
-		 
+		 총 평균 포인트는 : 0 원 입니다. 	 
 		*/
 	
 		Integer sum = 0;
 		int w = 0;
-		while(w < al.get(1).length) {
+		while(w < al.get(1).length) { //반복횟수 지정
 			
-			sum += (int)al.get(1)[w];
+			sum += (int)al.get(1)[w]; 
 			
 			w++;
 		}
