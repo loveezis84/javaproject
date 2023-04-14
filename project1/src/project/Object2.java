@@ -25,11 +25,8 @@ public class Object2 {
 		
 		//복합적 Object 배열
 		
-		Object userinfo[] = {"hong",25,"서울","01023458777"};
-		
-		
-		
-		
+		Object userinfo[] = {"hong",25,"서울","01023458777",5000};
+			
 		
 	}
 
