@@ -31,7 +31,6 @@ class ob1{
 		 총 평균 포인트는 : 0 원 입니다. 
 		 
 		*/
-		
 	
 		Integer sum = 0;
 		int w = 0;
