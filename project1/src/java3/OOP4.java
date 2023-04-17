@@ -3,7 +3,7 @@ package java3;
 import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Scanner;
-
+//array2와 abstract해서 사용함
 public class OOP4 {
 
 	/*

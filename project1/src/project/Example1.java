@@ -21,16 +21,14 @@ public class Example1 {
 	public static void main(String[] args) {
 
 		updowngame ud = new updowngame();
-		ud.userNum();
-
+		ud.result();
 	}
-
 }
 class updowngame implements random {
 	Scanner sc;
 
 	@Override
-	public void userNum() {
+	public void result() {
 		this.sc = new Scanner(System.in);
 		int number;
 		int userNum1;

@@ -39,7 +39,7 @@ class point {
 		while(true) {
 			sc = new Scanner(System.in);
 			try {
-				
+	
 			if(count == 8) {
 				break;
 			}
@@ -55,7 +55,10 @@ class point {
 				continue;
 			}
 		}
-		System.out.println(userp);
+		for(Object a : userp) {
+		System.out.println(a);		
+		}
+//		System.out.println(userp);
 	}
 }
 
