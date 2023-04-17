@@ -36,8 +36,8 @@ public class Exception7 {
 }
 class checklist{
 	
-	ArrayList<String> name = new ArrayList<>(); //빈배열 생성
-	ArrayList<Integer> agelist = new ArrayList<>();
+	ArrayList<String> name = new ArrayList<>(); // 문자열 받기위한 빈배열
+	ArrayList<Integer> agelist = new ArrayList<>(); //숫자열 받기위한 빈배열
 	public void setter(Object[] a) throws Exception { 
 		//(3) Object배열을 setter로 받음
 		int ea = a.length;
@@ -50,7 +50,8 @@ class checklist{
 				this.name.add(check);
 				
 			}catch (Exception e) {	//예외처리발생
-				int check2 = Integer.valueOf((int)a[w]);
+				int check2 = Integer.valueOf((int)a[w]); 
+				//위에서 걸러진 숫자들만 따로 check2변수에 이관
 				this.agelist.add(check2);
 			}
 			w++;

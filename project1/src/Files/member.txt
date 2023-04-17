@@ -1,0 +1,2 @@
+홍길동,30,hong@nate.com,서울시,5000
+강감찬,25,kang@gmail.com,강원도,4500
