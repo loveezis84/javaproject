@@ -3,7 +3,6 @@ package Files;
 import java.io.FileReader;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class File7 {
@@ -13,7 +12,6 @@ public class File7 {
 		member mb = new member();
 		try {
 			mb.client();
-
 		} catch (Exception e) {
 			System.out.println("메소드 오류");
 		}
@@ -43,6 +41,8 @@ class member {
 			}
 			Um2.add(Um);
 		}
+		fr.close();
+		sc.close();
 		System.out.println(Um2);
 	}
 }
