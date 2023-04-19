@@ -17,10 +17,8 @@ public class Net4 {
 			cr.creak();
 		} catch (Exception e) {
 			
-			
 		}
 	}
-
 }
 class crawling2{
 	Scanner sc;
@@ -37,6 +35,7 @@ class crawling2{
 		this.urls = new URL(this.url);
 		URLConnection con = this.urls.openConnection();
 		this.is = this.urls.openStream();
+		//BufferedInputStream 적용 후 byte 변환
 		//통신에는 openStream만 사용합니다.
 		
 		// ▲▲▲ 통신 파트 ▲▲▲ 
@@ -47,7 +46,7 @@ class crawling2{
 		int z = 0;
 		
 		while((z = buff.read(code)) != -1) {
-			
+			//int 형태로 write 
 			fs.write(code,0,z);
 			
 			z++;
