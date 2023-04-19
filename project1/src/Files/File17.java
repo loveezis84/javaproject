@@ -39,10 +39,13 @@ class memory{
 			byte fileSize[] = new byte[buff.available()];
 			
 			OutputStream ost = new FileOutputStream("E:\\memo\\copy2.jpg");
-			int imgs = buff.read(fileSize);
-			ost.write(fileSize,0,imgs);
+			buff.read(fileSize);
+			ost.write(fileSize);
 			
 			System.out.println("이미지가 등록 되었습니다");
+			buff.close();
+			ist.close();
+			ost.close();
 		}
 	}
 }

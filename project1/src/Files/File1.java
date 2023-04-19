@@ -1,7 +1,6 @@
 package Files;
 
 import java.io.FileReader;
-import java.io.IOException;
 
 public class File1 {
 	//I/O : InputStream, OutputStream 

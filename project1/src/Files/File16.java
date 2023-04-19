@@ -54,6 +54,8 @@ public class File16 {
 				//이미지 다운로드 완료율을 보여주는 변수
 				check++;
 			}	
+			is.close();
+			os.close();
 		} catch (Exception e) {
 			System.out.println(e);
 		}
