@@ -31,26 +31,29 @@ class Mchat{
 	
 	public Mchat(String id) {
 		try {
-			
+			this.so = new Socket(this.ip,this.port);
+			this.os = this.so.getOutputStream(); //출력
 			this.msg = "Welcome to " + id;
+			this.os.write(this.msg.getBytes());
+			this.os.flush();
+			
 			while(true) {
 				this.so = new Socket(this.ip,this.port);
 				this.is = this.so.getInputStream(); //받고
-				this.os = this.so.getOutputStream(); //출력
-				//상호 작용
 								
 				this.sc = new Scanner(System.in);
 				System.out.println("chat : ");
 				this.msg = this.sc.nextLine();
-				
+		
 				this.os.write(this.msg.getBytes());
 				this.os.flush();
 				
 				
-				byte[] data = new byte[2048];
-				int n = this.is.read(data);
-				this.msg = new String(data,0,n);
-				System.out.println(this.msg);
+//				byte[] data = new byte[1024];
+//				int n = this.is.read(data);
+//				this.msg = new String(data,0,n);
+//				System.out.println(this.msg);
+				//상호 작용
 			}
 			
 		}
